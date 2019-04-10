@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+
+
+body {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  paddint-top: 3.5rem;
+}
+
+.jumbotron{
+  background: linear-gradient(to top, rgba(200, 200, 200, 0.6) 0%, rgba(200,200,200,1) 100%),
+  url("https://www.viajejet.com/wp-content/viajes/templo-pura-ulun-danu-bratan-bali-indonesia.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center center;
+}
+
+p {
+  color: black;
+}
+
+/* Any color device */
+@media (color) {
+  p {
+    color: red;
+  }
+}
+
+/* Any color device with at least 8 bits per color component */
+@media (min-color: 8) {
+  p {
+    color: #2A0A12;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
